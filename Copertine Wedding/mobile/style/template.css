@@ -358,7 +358,7 @@ textarea{font-family:Calibri;}
     z-index: 99;
    
     
- 	bottom: 0px;
+ 	top: 0px;
  	right: 0px;
  	
  	width : 100%;
@@ -545,5 +545,6 @@ textarea{font-family:Calibri;}
 
 .disable{opacity:0.2;filter:alpha(opacity=20);}
 .usable{opacity:1;filter:alpha(opacity=100);}
+
 
 
