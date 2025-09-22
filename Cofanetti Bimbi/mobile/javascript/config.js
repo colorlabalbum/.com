@@ -116,7 +116,7 @@ btnTableOfContent:["btnBookMark"]
 	pageBackgroundColor:"#FFFFFF",
 	flipshortcutbutton:"Show",
 	BookMargins:"",
-	topMargin:10,
+	topMargin:50,
 	bottomMargin:10,
 	leftMargin:10,
 	rightMargin:10,
