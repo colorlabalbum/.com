@@ -3374,11 +3374,73 @@ body{position:fixed;}
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
 
+	/* ===== TOOLBAR FIX - SPOSTA IN ALTO ===== */
 
+/* Desktop */
+body {
+    padding-top: 70px !important;
+}
 
+#fbToolBar {
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    width: 100% !important;
+    height: 50px !important;
+    z-index: 1000 !important;
+}
 
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px !important;
+        margin: 0 !important;
+    }
+    
+    .phoneBottomBar {
+        position: fixed !important;
+        top: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+        width: 100% !important;
+        height: 50px !important;
+        z-index: 1000 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Frecce di navigazione */
+    #contentBox,
+    .phoneGotoPageContent {
+        position: fixed !important;
+        top: 50px !important;
+        bottom: auto !important;
+        left: 0px !important;
+        right: 0px !important;
+        width: 100% !important;
+        z-index: 999 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
 
+/* Mobile Portrait */
+@media (max-width: 768px) and (orientation: portrait) {
+    body {
+        padding-top: 110px !important;
+    }
+}
 
-
-
-
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        padding-top: 55px !important;
+    }
+    
+    #contentBox,
+    .phoneGotoPageContent {
+        height: 45px !important;
+    }
+}
