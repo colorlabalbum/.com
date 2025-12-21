@@ -1,9 +1,36 @@
-<style>
-body { 
-    padding-top: 55px !important; 
-    margin: 0 !important;
+<script>
+function adjustLayout() {
+    var toolbar = document.getElementById('fbToolBar');
+    
+    if (toolbar) {
+        // LEGGI L'ALTEZZA REALE DELLA BARRA
+        var toolbarHeight = toolbar.offsetHeight;
+        
+        // APPLICA MARGIN AL FLIPBOOK
+        var containers = document.querySelectorAll('.tmpContainer, .bookContainer, #page, .outerdiv, .flip-container');
+        
+        containers.forEach(function(el) {
+            el.style.marginTop = toolbarHeight + 'px';
+        });
+        
+        // APPLICA PADDING AL BODY
+        document.body.style.paddingTop = toolbarHeight + 'px';
+        
+        console.log('Toolbar height: ' + toolbarHeight + 'px');
+    }
 }
 
+// Esegui al caricamento
+window.addEventListener('load', adjustLayout);
+
+// Esegui al resize (quando cambia la dimensione dello schermo)
+window.addEventListener('resize', adjustLayout);
+
+// Esegui periodicamente per mobile
+setInterval(adjustLayout, 1000);
+</script>
+
+<style>
 #fbToolBar { 
     position: fixed !important; 
     top: 0 !important; 
@@ -13,14 +40,9 @@ body {
     z-index: 1000 !important; 
 }
 
-/* FORZA IL FLIPBOOK A STARE SOTTO */
-.tmpContainer,
-.bookContainer,
-#page,
-.outerdiv,
-.flip-container {
-    margin-top: 55px !important;
-    padding-top: 0 !important;
+body { 
+    margin: 0 !important;
+    padding-top: 50px !important;
 }
 </style>
 
@@ -3342,6 +3364,7 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
 
