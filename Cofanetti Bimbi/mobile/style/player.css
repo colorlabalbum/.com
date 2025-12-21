@@ -8,7 +8,7 @@
     width: 100% !important; 
     z-index: 1000 !important; 
 }
-body { padding-top: 70px !important; }
+body { padding-top: 40px !important; }
 
 /* Mobile */
 .phoneBottomBar { 
@@ -3343,6 +3343,7 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
 
