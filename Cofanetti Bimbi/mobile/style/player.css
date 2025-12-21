@@ -2,8 +2,13 @@
 body { padding-top: 48px !important; }
 #fbToolBar { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 1000 !important; }
 
-/* SPOSTA IL FLIPBOOK GIÙ */
-.tmpContainer { margin-top: 48px !important; }
+/* SPOSTA IL FLIPBOOK */
+.tmpContainer,
+.bookContainer,
+#page {
+    margin-top: 48px !important;
+    top: 48px !important;
+}
 </style>
 
 body{position:fixed;}
@@ -3324,6 +3329,7 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
 
