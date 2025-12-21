@@ -1,6 +1,6 @@
 <style>
 body { 
-    padding-top: 60px !important; 
+    padding-top: 55px !important; 
     margin: 0 !important;
 }
 
@@ -19,7 +19,7 @@ body {
 #page,
 .outerdiv,
 .flip-container {
-    margin-top: 60px !important;
+    margin-top: 55px !important;
     padding-top: 0 !important;
 }
 </style>
@@ -3342,6 +3342,7 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
 
