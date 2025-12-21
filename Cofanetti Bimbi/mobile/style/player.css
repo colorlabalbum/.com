@@ -1,42 +1,27 @@
 <style>
-body { 
-    padding-top: 50px !important; 
-    margin-top: 0 !important;
-	<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var toolbar = document.getElementById('fbToolBar') || document.querySelector('.fbToolBar');
-    if (toolbar) {
-        toolbar.style.position = 'fixed';
-        toolbar.style.top = '0px';
-        toolbar.style.left = '0px';
-        toolbar.style.right = '0px';
-        toolbar.style.width = '100%';
-        toolbar.style.zIndex = '9999';
-        document.body.style.paddingTop = '50px';
-    }
-});
-</script>
-}
-
+/* Desktop */
 #fbToolBar { 
     position: fixed !important; 
     top: 0 !important; 
     left: 0 !important;
     right: 0 !important; 
     width: 100% !important; 
-    height: auto !important;
-    z-index: 9999 !important; 
-    display: block !important;
-    visibility: visible !important;
+    z-index: 1000 !important; 
 }
+body { padding-top: 70px !important; }
 
-.fbToolBar { 
+/* Mobile */
+.phoneBottomBar { 
     position: fixed !important; 
     top: 0 !important; 
     left: 0 !important;
     right: 0 !important; 
     width: 100% !important; 
-    z-index: 9999 !important; 
+    z-index: 1000 !important; 
+}
+
+@media (max-width: 768px) {
+    body { padding-top: 50px !important; }
 }
 </style>
 
@@ -3358,5 +3343,6 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
