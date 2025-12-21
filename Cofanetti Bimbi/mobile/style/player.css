@@ -1,37 +1,42 @@
 <style>
-body { 
-    padding-top: 70px !important; 
-    margin: 0 !important;
-}
+/* SPOSTA QUALSIASI BARRA DA SOTTO A SOPRA */
+body { padding-top: 50px !important; margin: 0 !important; }
 
-#fbToolBar { 
-    position: fixed !important; 
-    top: 0 !important; 
-    left: 0 !important; 
-    right: 0 !important; 
-    width: 100% !important; 
+#fbToolBar, 
+.fbToolBar,
+.toolBar,
+.toolbar,
+.mobile-bar,
+.mobileBar,
+.bottom-bar,
+[class*="toolbar"],
+[class*="controls"],
+[style*="bottom: 0"] {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
     z-index: 1000 !important;
     margin: 0 !important;
-    padding: 0 !important;
 }
 
-/* FORZA IL FLIPBOOK A STARE SOTTO */
-.tmpContainer,
-.bookContainer,
-#page,
-.outerdiv {
-    margin-top: 70px !important;
-    padding-top: 0 !important;
+/* MEDIA QUERY */
+@media (max-width: 1024px) {
+    body { padding-top: 55px !important; }
 }
 
 @media (max-width: 768px) {
-    body { padding-top: 80px !important; }
-    .tmpContainer, .bookContainer, #page, .outerdiv { margin-top: 80px !important; }
+    body { padding-top: 60px !important; }
 }
 
 @media (max-width: 480px) {
-    body { padding-top: 85px !important; }
-    .tmpContainer, .bookContainer, #page, .outerdiv { margin-top: 85px !important; }
+    body { padding-top: 65px !important; }
+}
+
+@media (max-width: 375px) {
+    body { padding-top: 70px !important; }
 }
 </style>
 
@@ -3353,6 +3358,7 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
 
