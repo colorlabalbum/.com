@@ -1,16 +1,16 @@
 <style>
 /* DESKTOP */
-body { padding-top: 40px !important; }
+body { padding-top: 60px !important; }
 #fbToolBar { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 1000 !important; }
 
 /* TABLET */
 @media (max-width: 768px) {
-    body { padding-top: 45px !important; }
+    body { padding-top: 65px !important; }
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
-    body { padding-top: 50px !important; }
+    body { padding-top: 70px !important; }
 }
 </style>
 
@@ -3332,5 +3332,6 @@ body{position:fixed;}
 
 .volume-pgress{position:absolute; border:0 none;}
 .volume-pgress span{cursor:pointer;display:block; position:absolute; width:12px; height:12px;  background:#FFF;-moz-border-radius: 50%; -webkit-border-radius:50% ; border-radius:50%;}
+
 
 
