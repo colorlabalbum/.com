@@ -174,39 +174,3 @@ try{
 	}
 }catch(e){
 }
-// SPOSTA LA BARRA IN ALTO SU MOBILE
-if (window.innerWidth <= 768) {
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            var toolbar = document.getElementById('fbToolBar');
-            
-            if (toolbar) {
-                toolbar.style.position = 'fixed';
-                toolbar.style.top = '0';
-                toolbar.style.bottom = 'auto';
-                toolbar.style.left = '0';
-                toolbar.style.right = '0';
-                toolbar.style.width = '100%';
-                toolbar.style.zIndex = '10000';
-                
-                var toolbarHeight = toolbar.offsetHeight;
-                document.body.style.paddingTop = (toolbarHeight + 10) + 'px';
-            }
-        }, 1000);
-    });
-}
-
-window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
-        var toolbar = document.getElementById('fbToolBar');
-        if (toolbar) {
-            var toolbarHeight = toolbar.offsetHeight;
-            document.body.style.paddingTop = (toolbarHeight + 10) + 'px';
-        }
-    }
-});
-
-try{
-	$.browser.device = 2;
-}catch(ee){
-}
